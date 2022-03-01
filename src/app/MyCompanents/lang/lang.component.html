@@ -1,0 +1,26 @@
+
+<!-- Change Language : <select #selLang (change)="translateLanguageTo(selLang.value)">
+  <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+</select> -->
+
+<li class="nav-item ">
+    <a class="nav-link  text-light" href="#" id="navbar" role="button" data-bs-toggle="" aria-expanded="false">
+      Select Language<select  #selLang (change)="translateLanguageTo(selLang.value)">
+        <!-- <option value="en" [selected]="lang == 'en' ">English</option> -->
+        <!-- <option value="hi" [selected]="lang == 'hi' ">Hindi</option> -->
+        <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+    </select>
+    </a>
+
+
+    
+    
+    
+
+    <!-- <ul class="dropdown-menu language-picker" aria-labelledby="navbarDropdown" (change)="changeLang($event.target.value)">
+      <li><a class="dropdown-item" href="#" value="en">English</a></li>
+      <li><a class="dropdown-item" href="#" value="hi">Hindi</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Others</a></li>
+    </ul> -->
+  </li>

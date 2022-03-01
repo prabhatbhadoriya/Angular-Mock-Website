@@ -1,0 +1,14 @@
+
+
+
+  
+    <div *ngFor="let subject of subjects">
+        <div class="container" *ngIf="serc === '' || subject.title.includes(serc) || subject.desc.includes(serc) || subject.cat.includes(serc) || subject.sno.includes(serc)">
+
+            <app-sub-item  [subject]="subject">
+                
+            </app-sub-item>
+        </div>
+
+    </div>
+
